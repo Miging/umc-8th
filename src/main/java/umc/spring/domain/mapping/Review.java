@@ -36,6 +36,7 @@ public class Review extends BaseEntity {
 	private Integer score;
 
 	@ManyToOne(fetch=FetchType.LAZY)
+
 	@JoinColumn(name = "restaurant_id")
 	private Restaurant restaurant;
 
